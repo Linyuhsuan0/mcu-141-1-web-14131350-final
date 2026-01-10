@@ -103,6 +103,22 @@ header nav .active::after {
   left: calc(50% - 2.5px);
   bottom: -8px;
 }
+header div.button {
+  margin-left: 450px;
+}
+header div.button .btn-secondary {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #aaa;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header div.button .btn-secondary:hover {
+  background-color: var(--secondary-color);
+}
 section {
   width: 100%;
 }
@@ -243,17 +259,23 @@ div.home > div.text div.button button {
   font-weight: 500;
   line-height: 1.25rem;
   padding: 0.75rem 1.25rem;
-  background-color: var(--gray-color-100);
+  background-color: var(--primary-color);
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+div.home > div.text div.button .btn-primary {
+  background-color: var(--primary-color);
+}
+div.home > div.text div.button .btn-secondary {
+  background-color: #aaa;
 }
 div.home > div.text div.button button:hover {
   background-color: var(--secondary-color);
   color: var(--white-color);
 }
 div.home > div.text div.button button > i {
-  margin-right: 10rem;
+  margin-right: 0.5rem;
 }
 div.home > div.text div.icons {
   margin-top: 1rem;
@@ -266,7 +288,11 @@ div.home > div.image {
   align-items: center;
 }
 div.home > div.image img {
-  width: var(--home-image-width);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 div.content {
   display: flex;
