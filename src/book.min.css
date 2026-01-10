@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  overflow-w: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --primary-color: #7baee0;
   --secondary-color: #aa8e12;
@@ -129,15 +140,18 @@ section div.container {
   padding-left: var(--container-padding-left);
 }
 section div.container {
-  background-color: #dedce0;
   width: 100%;
   max-width: none;
+  margin: 0;
+  background-color: #dedce0;
+  overflow: hidden;
 }
 section div.container > div {
   height: 4rem;
   width: 100%;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
   background-color: #dedce0;
 }
 section main.wrapper {
